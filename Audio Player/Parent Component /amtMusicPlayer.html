@@ -1,0 +1,41 @@
+<template>
+    <div class="slds-scrollable-y mainbackground">
+        <div class="header">
+            <h1>AMT Player</h1>
+            <p>THE VIBE</p>
+
+        </div>
+        <template if:true={datatable}>
+            <div class="datatable">
+                <div class="tableheader">
+                    <h2>Songs</h2>
+                    <h2>Size</h2>
+                </div>
+                
+                <div class="table">
+                    <template for:each={songslist} for:item="song">
+                        <div key={song.id} class="aligntable" data-id={song.externalId} onclick={selectedsong}>
+                            
+                            <div class="songname"><h1>{song.name}</h1></div>
+                            <div class="songMb"><h3>{song.Size} MB</h3></div>
+                        </div> 
+                         
+                       
+                    </template>
+                </div>
+                
+            </div>
+            <div class="footer">
+                &copy;Ramjith 
+            </div>
+
+        </template>
+        <template if:true={player}>
+            <c-amt-Audio-Player songid={selectsong} onbackbutton={clickback}></c-amt-Audio-Player>
+
+        </template>
+       
+
+    </div>
+
+</template>

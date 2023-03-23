@@ -1,0 +1,98 @@
+.header{
+    width: 100%;
+    height: 60px;
+    background-color: #404040a8;
+    border-radius: 10px 10px 0px 0px;
+    text-align: center;
+    padding: 20px;
+}
+.header h1{
+    font-family: roboto;
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.header p{
+    font-family: 'Dancing Script', cursive;
+
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 6px;
+    letter-spacing: 4px;
+}
+.mainbackground{
+    width: 349px;
+    height: 390px;
+    background-color:#4a4a4a;
+    border-radius: 10px;
+
+
+}
+.controller{
+  width: 100%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f1f3f4;
+  border-radius: 0px 0px 10px 10px;
+  }
+  /* audio::-webkit-media-controls-timeline {
+    color: aqua;    
+  } */
+
+audio::-webkit-media-controls-mute-button {
+  display: none !important;
+}
+audio::-webkit-media-controls-volume-slider{
+  display: none !important;
+}
+audio::-webkit-media-controls-volume-slider-container{
+  display: none !important;
+}
+/* .audio::-webkit-media-controls-panel{
+  background-color: #4a4a4a;
+} */
+.image{
+  height: 220px;
+  width: 100%;
+  margin-bottom: 7px;
+
+}
+.tableheader{
+  
+    width: 100%;
+    height: 33px;
+    display: flex;
+    justify-content: space-evenly;
+    /* background-color: aliceblue; */
+    align-items: center;
+    font-weight: 700;
+    color: white;
+
+}
+.back{
+  width: 9%;
+  height: 30px;
+  padding: 3px;
+  --sds-c-icon-color-foreground-default:#656565;
+}
+.back:hover{
+  --sds-c-icon-color-foreground-default:white;
+}
+.name{
+  width: 75%;
+    height: 33px;
+    display: flex;
+    align-items: center;
+}
+.download{
+  width: 6%;
+  height: 30px;
+  padding: 3px;
+  --sds-c-icon-color-foreground-default: #656565;
+}
+.download:hover{
+
+  --sds-c-icon-color-foreground-default: white;
+}

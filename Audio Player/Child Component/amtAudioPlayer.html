@@ -1,0 +1,32 @@
+<template>
+    <div class="tableheader">
+        <div class="back">
+            <lightning-icon size="x-small" icon-name="utility:back" alternative-text="back!" title="back" onclick={backbutton}></lightning-icon>
+        </div>
+        <div class="name">
+            <marquee behavior="scroll" direction="left">{name}</marquee>
+
+        </div>
+        <div class="download">
+            <a href={songlink}>
+                <lightning-icon size="x-small" icon-name="utility:download" alternative-text="download!" title="download" ></lightning-icon>
+       
+            </a>
+             </div>
+        
+       
+    </div>
+            <div class="Player">
+              
+                <div class="image">
+                    <img src={imgs}  style="height: 220px; width: 100%;"/>
+                </div>
+                <div class="controller">
+                    <audio class="audio" controls="controls" autoplay src={songlink} controlslist="nodownload noplaybackrate"></audio>
+                    
+                </div>
+               
+            </div>
+        
+
+</template>
